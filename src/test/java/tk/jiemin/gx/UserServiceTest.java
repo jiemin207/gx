@@ -19,14 +19,14 @@ public class UserServiceTest {
 
 	@Test
 	public void findbyTest() {
-		User p = userService.findall();
+		User p = userService.findall("张三");
 		System.out.println(p.getName());
 	}
 	
 	@Test
 	public void addTest(){
 		
-		userService.add("李四", "123456", 19);
+		userService.add("zjm", "123456", 20);
 		
 	}
 

@@ -12,9 +12,9 @@ public class UserService {
 	@Resource
 	UserDao userDao;
 
-	public User findall() {
+	public User findall(String name) {
 
-		return userDao.findBy();
+		return userDao.findByName(name);
 	}
 
 	public int add(String name, String password, int age) {

@@ -7,7 +7,7 @@ import tk.jiemin.gx.domain.User;
 @Mapper
 public interface UserDao {
 
-	User findBy();
+	User findByName(String name);
     
 	int add(User user);
     	

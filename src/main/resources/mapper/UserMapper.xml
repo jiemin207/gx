@@ -16,8 +16,8 @@
 		(#{name},#{password},#{age})
 	</insert>
 
-	<select id="findBy" resultMap="user">
-		SELECT * FROM user ;
+	<select id="findByName" parameterType="java.lang.String" resultMap="user">
+		SELECT id,user_name,password,age FROM user where user_name=#{name} ;
 	</select>
 
 </mapper>
