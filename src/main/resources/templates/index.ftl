@@ -6,5 +6,13 @@
 ${username}
 <img src="img/pkq.jpg" />
 
+<form action="/download">
+
+公司名称: <input type="text" name="company" /><br>
+
+<input type="submit">
+
+</form>
+
 </body>
 </html>
